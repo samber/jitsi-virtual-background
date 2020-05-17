@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Camera Virtual Background",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Display the picture of your choice in the camera background.",
+    "description": "The description of the application"
+  }
+}

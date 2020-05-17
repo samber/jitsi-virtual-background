@@ -1,0 +1,13 @@
+#multitenant-panel {
+  width: 6.8rem;
+  height: calc(100vh - 4.8rem);
+}
+
+#multitenant-panel ul {
+  padding: 0;
+  list-style: none;
+}
+
+#multitenant-panel ul li button {
+  height: 5.6rem;
+}

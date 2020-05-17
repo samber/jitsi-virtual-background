@@ -1,0 +1,39 @@
+{
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png",
+    "512": "images/icon-512.png"
+  },
+  "default_locale": "en",
+  "permissions": [],
+  "content_scripts": [{
+    "matches": [
+      "*://meet.jit.si/*"
+    ],
+    "js": [
+      "scripts/injector.js"
+    ],
+    "css": [
+      "styles/style.css"
+    ],
+    "run_at": "document_start",
+    "all_frames": false
+  }],
+  "background": {
+    "scripts": [
+      "scripts/background.js"
+    ],
+    "persistent": true
+  },
+  "web_accessible_resources": [
+    "lib/tfjs-1.2.min.js",
+    "lib/body-pix-2.0.min.js",
+    "lib/opencv.min.js",
+    "scripts/bg-processing.js",
+    "scripts/camera-hook.js"
+  ]
+}
